@@ -5,4 +5,4 @@
 # secundario = Maria
 fullName = str(input('Type your full name:'))
 print('Primary:', fullName.splitlines(1))
-print('Secondary:', fullName.split(a))
+print('Secondary:', fullName.split())
