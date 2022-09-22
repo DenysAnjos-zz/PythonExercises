@@ -3,8 +3,11 @@
 # > O nome com todas as letras minúsculas
 # > Quantas letras ao todu(sem considerar espaço
 # > Quantas letras tem o primeiro nome
-name = str(input('Type your full name:'))
-print(name.upper())
-print(name.lower())
+name = str(input('Type your full name:')).strip()
+print('Capital Leters', name.upper())
+print('Lowercase:', name.lower())
+print('Total letters:', len(name)-name.count(' '))
+print('First name letters: ', name.find(' '))
+
 
 
