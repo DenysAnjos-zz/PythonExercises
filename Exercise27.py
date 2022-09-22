@@ -3,6 +3,7 @@
 # Ex: Ana Maria de Souza
 # primário = Ana
 # secundario = Maria
-fullName = str(input('Type your full name:'))
-print('Primary:', fullName.splitlines(1))
-print('Secondary:', fullName.split())
+fullName = str(input('Type your full name:')).strip()
+name = fullName.split()
+print('Primary:', name[0])
+print('Last:', name[len(name)-1])
