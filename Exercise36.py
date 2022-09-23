@@ -5,10 +5,11 @@
 # Calcule o valor da prestação mensal, sabendo
 # que ela não pode exceder 30% do salário ou
 # então o empréstimo será negado
-valueHouse = float(input('Type the house value:'))
-salary = float(input('Type your salary:'))
+valueHouse = float(input('Type the house value:R$'))
+salary = float(input('Type your salary:R$'))
 years = int(input('Years to pay:'))
-if salary/(30/100) < valueHouse/(years*12):
+inst = valueHouse/(years*12)
+if salary*30/100 < inst:
     print('Denied!')
 else:
     print('Approved!')
