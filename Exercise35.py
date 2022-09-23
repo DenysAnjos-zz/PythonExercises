@@ -9,3 +9,4 @@ if l1 > l2 + l3 or l2 > l1 + l3 or l3 > l1 + l2:
     print('Its not a triangle!')
 else:
     print('Its a triangle!')
+

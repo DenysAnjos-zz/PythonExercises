@@ -4,6 +4,6 @@
 # 10% .Para os inferiores ou iguais o aumento é de 15%
 salary = float(input('Type your salary:'))
 if salary > 1250:
-    print('New salary:', (salary + (salary * (10 / 100))))
+    print('New salary:R${:.2f}'.format(salary + (salary * (10 / 100))))
 else:
-    print('New salary:', (salary + (salary * (15 / 100))))
+    print('New salary:R${:.2f}'.format(salary + (salary * (15 / 100))))
