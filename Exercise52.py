@@ -1,9 +1,16 @@
 # Faça um programa que leia um número inteiro
 # e diga se ele é ou não um número primo
-for c in range(0, 10):
-   n = int(input('Type a number:'))
-   if n != 2 and n != 3 or n % 2 == 0 or n % 3 == 0:
-       print(n, " is a prime number!")
+n = int(input('Type a number:'))
+total = 0
+for c in range(1, n + 1):
+    if n % c == 0:
+        print(c, '= true')
+        total += 1
+    else:
+        print(c, '= false')
 
-   else:
-       print(n, ' is not a prime number!')
+print('The number {} was divisible for {} numbers.'.format(n, total))
+if total == 2:
+    print('{} is a prime number'.format(n))
+else:
+    print('{} is not a prime number'.format(n))
