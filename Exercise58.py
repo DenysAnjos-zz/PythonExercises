@@ -5,9 +5,10 @@
 # mostrando no final quantos palpites
 # foram necessários para vencer
 from random import randint
-computer = randint(0, 5)
-count, check = 0, 0
+computer = randint(0, 10)
+check = int(input('Try to guess a number between 0 to 10:'))
+count = 1
 while check != computer:
-    check = int(input('Type a number:'))
+    check = int(input('Try again:'))
     count += 1
-print('You win!\nAnd tried {} times'.format(count))
+print('You win!\nYou tried {} times'.format(count))

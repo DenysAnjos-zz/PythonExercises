@@ -1,16 +1,17 @@
 # Faça um programa que leia um número
 # qualquer e mostre o seu fatorial.
 # ex: 5  5*4*3*2*1=120
-n = int(input('Type a number:'))
-total2 = n * n
-total2, total3, c = 0, 0, 0
-while c != 5:
-    print(n, end='*')
-    total = n*(n-1)
-    total2 += total
-    total3 += total2+total-n
-    n -= 1
-    c += 1
+c = int(input('Type a number:'))
+total2, total3, n = 0, 0, 1
+d = c
 
-print('=', total2)
-print('=', total3)
+while d > 0:
+    if d > 1:
+        print('{} x '.format(d), end='')
+    else:
+        print('{} = '.format(d), end='')
+    n *= c
+    d -= 1
+    c -= 1
+print(n)
+
