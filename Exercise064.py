@@ -3,7 +3,7 @@
 # digitar o valor 999, que é a condição de parada.
 # No final mostre quantos números foram digitados
 # e qual foi a soma entre eles, (desconsiderando o flag).
-check, sum, quantity = 0, 0, 0
+check = sum = quantity = 0
 while check != 999:
     check = int(input('Type 999 for stop\nType a integer:'))
     sum += check

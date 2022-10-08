@@ -5,11 +5,12 @@
 # digitados, respectivamente. Ao final,
 # mostre o conteúdo das três listas geradas.
 numbers = list()
-numbersOdd = numbersPair = list()
+numbersOdd = list()
+numbersPair = list()
 for c in range(0, 5):
     n = int(input('Type a number:'))
     numbers.append(n)
-    if n / 2 == 0:
+    if n % 2 == 0:
         numbersOdd.append(n)
     else:
         numbersPair.append(n)
