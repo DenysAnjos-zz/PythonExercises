@@ -11,6 +11,8 @@ for c in expr:
     elif c == ')':
         if len(test) > 0:
             test.pop()
+        else:
+            test.append(')')
 if len(test) == 0:
     print('Correct!')
 else:
