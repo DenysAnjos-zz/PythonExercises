@@ -16,9 +16,12 @@ while True:
     check = str(input('Do you want continue?(y/n)'))
     if check in 'nN':
         break
+print(f'High height:', end='')
 for n in group:
     if n[1] >= 80:
-        print(f'High height:{n[0]}')
+        print(f'{n[0]} with {n[1]}KG ', end='')
+print(f'\nLight height:', end='')
+for n in group:
     if n[1] <= 60:
-        print(f'Light weight:{n[0]}')
-print(f'Total people registered:{totalPeople}')
+        print(f'{n[0]} with {n[1]}KG ', end='')
+print(f'\nTotal people registered:{totalPeople}')
