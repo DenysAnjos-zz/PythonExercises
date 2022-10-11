@@ -54,6 +54,3 @@ for n in range(0, 3):
         number = int(input(f'Type a a value for {n, j}:'))
         matrix_linha.append(number)
     matrix.append(matrix_linha[:])
-
-for i in matrix:
-    print(i)
