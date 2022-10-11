@@ -20,5 +20,5 @@ for a in range(0, n):
     repeats.clear()
 
     print(f'Jogo {a+1}:{jogo}')
-    time.sleep(0.5)
+    time.sleep(0.51)
     jogo.clear()
