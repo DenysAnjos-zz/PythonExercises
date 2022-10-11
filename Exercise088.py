@@ -5,20 +5,8 @@
 # cadastrando tudo em uma lista composta
 import time
 from random import randint
-jogo = list()
+numbers = list()
 repeats = list()
-repeat = True
 n = int(input('How many games do you wanna play? '))
-for a in range(0, n):
-    for b in range(0, 6):
-        number = randint(1, 60)
-        while number in repeats:
-            number = randint(1, 60)
-
-        jogo.append(number)
-        repeats.append(number)
-    repeats.clear()
-
-    print(f'Jogo {a+1}:{jogo}')
-    time.sleep(0.51)
-    jogo.clear()
+for column in range(0, n):
+    for line in range (0, 3):

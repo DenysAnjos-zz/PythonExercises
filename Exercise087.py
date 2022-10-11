@@ -2,15 +2,18 @@
 # A soma de todos os valores pares digitados.
 # A soma dos valores da terceira coluna.
 # O maior valor da segunda linha.
-matriz = list()
-matrizAll = list()
-for m in range(0, 3):
-    matrizAll.append(matriz)
-    for n in range(0, 3):
-        u = int(input('Type a value:'))
-        matriz.append(u)
+matrix = list()
+matrixAll = list()
+for column in range(0, 3):
+    for line in range(0, 3):
+        number = int(input(f'Type a a value for {column, line}:'))
+        matrix.append(number)
+        matrix.append(matrixAll)
+print(matrix)
 
 
-print(matrizAll)
+
+
+
 
 
