@@ -5,16 +5,15 @@
 # tudo isso será guardado em um dicionário, incluindo
 # o total de gols feitos durante o campeonato.
 soccer = dict()
-soccer['name'] = str(input('Name:'))
+soccer['name'] = str(input('Name of player:'))
 soccer['matches'] = int(input('Number matches:'))
 goals = list()
-total = 0
+
 for c in range(0, soccer['matches']):
     n = int(input(f'Number os goals in the match:'))
     goals.append(n)
     soccer['goals'] = goals
-    total += n
-    soccer['total'] = total
+    soccer['total'] = sum(goals)
 print()
 print(soccer)
 print()
@@ -24,3 +23,6 @@ for i, v in soccer.items():
 
 print()
 print(f'The player {soccer["name"]} played {soccer["matches"]} games.')
+for i, v in enumerate(soccer['goals']):
+    print(f'In match {i+1}, he did {v}.')
+print(f'It was a total of {soccer["total"]} goals.')
